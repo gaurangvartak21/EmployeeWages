@@ -1,12 +1,22 @@
 ﻿using System;
-
 namespace EmployeeWages
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int Fulltime = 1;
+            Random random = new Random();
+
+            int employeestatus = random.Next(0, 2);
+            if (employeestatus == Fulltime)
+            {
+                Console.WriteLine("Employee is present");
+            }
+            else
+            {
+                Console.WriteLine("Employee is absent");
+                }
         }
     }
 }
